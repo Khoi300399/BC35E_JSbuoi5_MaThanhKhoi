@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- BS V4 CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="card 2-50 mx-auto">
+    <div class="card-header">
+      Bài 1
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label>Họ tên: </label>
+        <input type="text" id="hoTen" />
+      </div>
+      <div class="form-group">
+        <label>Tổng thu nhập năm: </label>
+        <input type="number" id="tongThuNhapNam" />
+      </div>
+      <div class="form-group">
+        <label>Số người phụ thuộc: </label>
+        <input type="number" id="soNguoiPhuThuoc" />
+      </div>
+      <button id="btnTinhThue" class="btn btn-success" onclick="btnTinhThue()">Tính thuế</button>
+      <div id="showTinhThue" class="card-footer text-muted">
+      </div>
+    </div>
+
+    <!-- BÀI 2 -->
+    <div id="bai2">
+      <h2>Bài 2</h2>
+      <div>
+        <label>Loại khách hàng: </label>
+        <select id="loaiKhachHang" onchange="xetSoKetNoi()">
+          <option value="nhaDan">Nhà dân</option>
+          <option value="doanhNghiep">Doanh nghiệp</option>
+        </select>
+      </div>
+      <div>
+        <label>Mã khách hàng: </label>
+        <input type="text" id="maKhachHang" />
+      </div>
+      <div>
+        <label>Số kênh cao cấp: </label>
+        <input type="number" id="soKenhCC" />
+      </div>
+      <div>
+        <label>Số kết nối: </label>
+        <input type="number" id="soKetNoi" disabled />
+      </div>
+      <button id="btnTienCap">Tính tiền cáp</button>
+      <p id="ketQua2"></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- BS V4 JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+
+    <script src="./js/bai_01.js"></script>
+    <script src="./js/bai_02.js"></script>
+</body>
+
+</html>
